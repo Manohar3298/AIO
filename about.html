@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header, section {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 1000px;
+      background: white;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Me</h1>
+    <p>Welcome to my portfolio! Here's an overview of my background, skills, and experience.</p>
+  </header>
+
+  <section>
+    <h2>What I Do</h2>
+    <p>
+      I am a passionate web developer skilled in building dynamic and responsive web applications. 
+      I specialize in front-end development using HTML, CSS, JavaScript, and also have backend knowledge 
+      in Java, Node.js, and SQL. I enjoy transforming ideas into practical and user-friendly software solutions.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+      <li>Java (Servlets & JSP)</li>
+      <li>Node.js, Express.js</li>
+      <li>MySQL, SQLite</li>
+      <li>Operating Systems Installation & Linux Tools</li>
+      <li>Programming Languages: C/C++, Python, Java</li>
+      <li>Certificates in Web Development & Linux Basics</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/web-cert.jpg" alt="Web Development Certificate">
+        <h3>Web Development</h3>
+        <p><strong>Date:</strong> May 2024</p>
+        <p>Achieved certification for completing a full-stack web development course. This day marked a milestone in 
+           advancing my practical coding abilities.</p>
+      </div>
+      <div class="card">
+        <img src="img/linux-cert.jpg" alt="Linux Certificate">
+        <h3>Linux Essentials</h3>
+        <p><strong>Date:</strong> March 2023</p>
+        <p>Completed Linux fundamentals course, gaining proficiency in CLI tools and system management.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Freelance Web Developer (2023 - Present)</h3>
+      <p>
+        Created multiple responsive websites and student-focused platforms. Developed a complete e-book sharing 
+        system with Google Drive integration and MySQL database backend. Improved user accessibility and system performance.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/ebook-project.jpg" alt="E-book Website Project">
+        <h3>E-book Distribution Platform</h3>
+        <p>A full-stack web application to provide free educational e-books and placement materials. Built using JSP, 
+           Servlets, MySQL, and Bootstrap. Integrated with Google Drive for storage.</p>
+      </div>
+      <div class="card">
+        <img src="img/portfolio.jpg" alt="Portfolio Project">
+        <h3>Personal Portfolio</h3>
+        <p>Responsive portfolio website showcasing my projects, certifications, and skills. Built using HTML, CSS, 
+           JavaScript, and hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

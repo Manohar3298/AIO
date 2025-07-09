@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manohar</title>
+  <link rel="stylesheet" href="style">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    img {
+      height: 35px;
+      width: 80px; 
+      border-radius: 20%;
+    }
+    nav1 a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav nav1 a:hover {
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+      background-color: #fff;
+    }
+    .photo-section {
+    text-align: center; /* Center image */
+    margin-top: 10px;
+  }
+
+  .photo-section img {
+    width: 300px;       /* Change this as needed */
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+    .text-section {
+    width: fit-content;
+    margin: 10rem auto;
+    text-align: left;
+    }
+    .text-section h1 {
+      font-size: 28px;
+    }
+    span {
+      color: #0056b3;
+      font-size: 35px;
+      }
+    .text-section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .resume-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .resume-button:hover {
+      background-color: #0056b3;
+    }
+/* Placement section */
+    #placement {
+      padding: 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .desc {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+      max-width: 800px;
+      margin-inline: auto;
+    }
+    .worksImgs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      max-width: 65rem;
+      margin-top: 1.5rem;
+      margin-left: 7.5rem;
+    }
+    .img {
+      object-fit: contain; 
+      width: 15rem; 
+      height: 10rem; 
+      margin: 1rem; 
+      border: 1px;
+      border-radius: 4px;
+      background: rgb(50, 50, 50);
+      }
+    .img:hover {
+      transform: scale(1.1);
+    }
+
+    #workBtn {
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #workBtn:hover {
+      background-color: #005b99;
+    }
+    
+/* About Section */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    #about {
+      background-color: #fff;
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .about-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .about-desc {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      min-height: 2em; /* to avoid shifting the layout */
+      transition: opacity 0.5s;
+    }
+
+    #aboutBtn {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007acc;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #aboutBtn:hover {
+      background-color: #005b99;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+      <img src="/assets/logo.png" alt="Manohar Logo">
+    <nav1>
+      <a href="blogs.html">Blogs</a>
+      <a href="mybooks.html">Books</a>
+    </nav1>
+  </header>
+
+  <main>
+    <div class="photo-section">
+      <img id="randomImage" src="" alt="Random Photo" />
+    </div>    
+    <div class="text-section">
+      <h1>Hi, I'm Manohar<br><span id="role">a Freelancer.</span></h1>
+      <p>A passionate student always eager to learn and grow.</p>
+      <a class="resume-button" href="assets/MyResume.pdf" download>Download Resume</a>
+    </div>
+  </main>
+
+      <!-- Placement Section -->
+  <section id="placement">
+    <h2 class="title">Placement Material</h2>
+    <span class="desc">
+      Get access to placement materials from top companies, including their interview questions and practice sets, to help you prepare effectively and boost your chances of success.
+    </span>
+    <div class="worksImgs">
+      <a href="https://drive.google.com/drive/folders/17VWqxh-nxgk-7GIoykceovdc4Gx50Tu9?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p1.png" alt="p1" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/14GjwW8C3KLGNTcDdz6uAPdHWfwIKDFeq?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p2.png" alt="p2" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1FKt78GGNmhYwj385crznxGdTGx9WhA98?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p3.png" alt="p3" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1vxZf2PKNmdzbC_bcV68Y-3IKAaP6tcX4?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p4.png" alt="p4" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1lUqDytFp8VyMp7YDS96nlKmhQ01GffE8?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p5.png" alt="p5" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1ZPbLTILW7M3lol9zfXctgny0PIorv8QB?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p6.png" alt="p6" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1hOpPGezLtHxQ8UxE-7pz1cHR11ClrVhV?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p7.png" alt="p7" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1a7yyeSjtrqeWkZH5zckewkoJbKhCq_lo?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p8.png" alt="p8" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1QW_8jgxBrhJ4bGrZYbp5lgK5VVZtwbrv?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p9.png" alt="p9" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1DUBqhlmQIiR02CxazzrzyKGsoIwNUVop?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p10.png" alt="p10" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1tnIZ4JBoge_ZsJJ03oNWszgcyTBNvCA4?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p11.png" alt="p11" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1mU_L9awClmJPYRfoWgxnBv-lv8Z6V_vD?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p12.png" alt="p12" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1im6TByM0vHAT1Veva6Fu97X7L96RY2pT?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p13.png" alt="p13" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1TCPLW7g_QD5NsKmqOM65_XQtNKSy8S4_?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p14.png" alt="p14" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/14LExMSJ2k7xzMska7u-mTuBS9c9f2KhL?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p15.png" alt="p15" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1bM27LYvlHNLZWUIHVsOsnlxqsfNq-EQY?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p16.png" alt="p16" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1TyhRlKfFvBLvtRCzPnRWXKSwFyyko7kk?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p17.png" alt="p17" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1EaAV9_2eqrNax5FdlwW3kOpNSKcdpCsF?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p18.png" alt="p18" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1EaAV9_2eqrNax5FdlwW3kOpNSKcdpCsF?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p19.png" alt="p19" class="img" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1pi5Ez01y4BZO3brTxjJVHrrCeyK3DSIv?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <img src="assets/placement/p20.png" alt="p20" class="img" />
+      </a>
+    </div>
+    <button id="workBtn">See More</button>
+  </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="about-title">About Me</h2>
+      <p id="aboutLines" class="about-desc"></p>
+      <button id="aboutBtn">Read More</button>
+    </section>
+
+
+<!-- Footer Start -->
+<footer style="background-color: #222; color: #fff; padding: 30px 0;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- About -->
+    <div style="flex: 1; min-width: 250px; padding: 10px;">
+      <h3>About Me</h3>
+      <p>I am a web developer skilled in front-end and back-end development. Passionate about creating user-friendly digital solutions.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1; min-width: 200px; padding: 10px;">
+      <h3>Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #ccc; text-decoration: none;">About</a></li>
+        <li><a href="blogs.html" style="color: #ccc; text-decoration: none;">Blogs</a></li>
+        <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 250px; padding: 10px;">
+      <h3>Contact</h3>
+      <p>Email: manoharpanday333@gmail.com</p>
+      <p>Phone: +91-6207831036</p>
+      <p>Location: India</p>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1; min-width: 200px; padding: 10px;">
+      <h3>Follow Me</h3>
+      <a href="#" style="color: #ccc; text-decoration: none; margin-right: 10px;">Facebook</a>
+      <a href="#" style="color: #ccc; text-decoration: none; margin-right: 10px;">LinkedIn</a>
+      <a href="#" style="color: #ccc; text-decoration: none;">GitHub</a>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 20px; color: #aaa;">
+    <p>&copy; 2025 Manohar Kumar. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Footer End -->
+
+  
+
+  <script>
+// main Section
+const images = [
+    "/assets/img1.png",
+    "/assets/img2.png"
+  ];
+  const randomIndex = Math.floor(Math.random() * images.length);
+  document.getElementById("randomImage").src = images[randomIndex];
+
+const roles = ["a Freelancer.", "a Student."];
+  let index = 0;
+    setInterval(() => {
+    index = (index + 1) % roles.length;
+    document.getElementById("role").textContent = roles[index];
+    }, 2000);
+
+// Placement Section
+    document.getElementById("workBtn").addEventListener("click", () => {
+    window.open(
+    "https://drive.google.com/drive/folders/1svRawqLKP_rvpP7gDXu3uuRoDyYYV68d?usp=drive_link",
+    "_blank",
+    "noopener,noreferrer"
+    );
+    });
+
+// About Section
+document.getElementById("aboutBtn").addEventListener("click", () => {
+  window.location.href = "about.html";
+});
+
+    
+  const aboutLines = [
+    "I am using Linux Debian as my primary development environment.",
+    "I'm a daily learner, always expanding my skills.",
+    "I love to write programs every time in different ways.",
+    "I believe in contributing to open-source and sharing knowledge.",
+    "I'm passionate about cybersecurity and secure coding practices.",
+    "I’m eager to work on innovative projects with a positive impact."
+    ];
+  let aboutIndex = 0;
+  function showNextLine() {
+    const aboutElement = document.getElementById("aboutLines");
+    aboutElement.style.opacity = 0;
+    setTimeout(() => {
+      aboutElement.textContent = aboutLines[aboutIndex];
+      aboutElement.style.opacity = 1;
+      aboutIndex = (aboutIndex + 1) % aboutLines.length;
+    }, 500);
+  }
+setInterval(showNextLine, 3000); // change every 3 seconds
+// show the first line immediately
+showNextLine();
+
+
+    // Optional: Add JavaScript for interaction if needed
+    console.log("Website loaded successfully");
+  </script>
+</body>
+</html>
